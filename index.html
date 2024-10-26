@@ -3,15 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR CODE GENERATOR</title>
+    <title>QRICK</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
+    
     <div class="container">
         <p>Enter your text or url</p>
-        <input type="text" placeholder="text or url">
-        <button></button>
+        <input type="text" placeholder="text or url" id="qrtext">
+        <div id="imgBox">
+            <img src="" id="qrIMG">
+        </div>
+        <button onclick="generateQR()">Generate QR code</button>
+        <script src="script.js"></script>
     </div>
 </body>
 </html>
